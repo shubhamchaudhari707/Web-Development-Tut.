@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* logo and image */
+#logo{
+    display: block;
+    justify-content: center;
+    margin: 10px 34px;
+    color: white;
+    font-style: italic;
+    
+}
+
+#logo img{
+    display: block;
+     width: 50px;
+     height: 50px;
+     margin: 10px 30px;
+    
+} 
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+
+}
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+    padding: 3px 20px;
+    font-weight: bold;
+    color: white;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* ################## home section start ############### */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+#home::before{
+    content: "";
+    background: url(/images/Project-2/bg1.jpg)no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+.h-primery{
+    font-size: 3.8rem;
+    padding: 12px;
+    
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    font-family: 'Baloo 2', cursive;
+    color: white;
+    font-size: 1.2rem;
+
+    
+}
+.btn{
+    padding: 10px 31px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+.center{
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+#services{
+    display: flex;
+    margin: 34px;
+}
+#services .box{
+    border: 2px solid red;
+    margin: 3px 10px;
+    padding: 34px;
+    border-radius: 30px;
+    background-color: #efdede;
+
+}
+#services .box img{
+    width: 100px;
+    display: block;
+    margin: auto;
+    
+}
+/* ########### clint section ########### */
+#clint-section{
+    
+    
+    
+
+}
+#clint-section::before{
+    content: "";
+    position: absolute;
+    background: url(/images/Project-2/bg.jpg);
+    height: 43%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+#clints{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#clints img{
+    height: 130px;
+
+}
+.client-item{
+    padding: 34px;
+}
+
+/* ########### contact section ############3 */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(/images/Project-2/contact.jpg) no-repeat center center/cover;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+#names{
+    float: right;
+    color:white;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    
+    
+}
+.contact-box form{
+    width: 41%;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+#btn{
+
+    align-items: center;
+    text-align: center;
+
+    
+    padding: 14px 286   px;
+    margin: 10px 0px;
+
+}
+#btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+

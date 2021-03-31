@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ************* shubham ***************** */
+
+/* .navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content:space-between;
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+nav ul a{
+    text-decoration: none;
+} */
+
+/* ************* shubham end navbar ***************** */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #555;
+}
+nav ul li a:hover{
+    color:#ff523b ;
+}
+
+.container{
+    max-width: 1300px;
+   
+    margin: auto;
+    padding: 0px 25px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    text-transform: capitalize;
+}
+
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.5s;
+
+}
+
+.btn:hover{
+    background: #563434;
+}
+
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+
+/* ****************** navbar end ************** */
+
+
+/* ****************** featured categoery section ************** */
+
+.categeries{
+    margin: 70px 0;
+    flex-wrap: wrap;
+}
+.col-3{
+    flex-basis: 30%;
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img{
+    width: 100%;
+}
+
+.small-container{
+    width: 1080px;
+    margin: auto;
+    padding: 0 25px;
+    /* background-color: rgb(247, 233, 233); */
+}
+
+/* ****************** featured categoery section ************** */
+.title{
+    text-align: center;
+    line-height: 60px;
+    color: #555;
+    position: relative;
+}
+.title::after{
+    content: "";
+    background-color: #ff523b;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+
+.col-4{
+    flex-basis: 25%;
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.col-4 img{
+    width: 100%;
+}
+.col-4 h4{
+    color: #555;
+    font-weight: normal;
+}
+.rating{
+    color: #ff523b;
+}
+
+
+/* ****************** latest categoery section ************** */
+
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.offer img{
+    padding: 50px;
+}
+small{
+    color: #555;
+}
+
+
+/* ****************** testimonial  section ************** */
+
+
+.testimonial{
+    margin-top: 100px;
+}
+.testimonial .col-3{
+    
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-20px);
+
+}
+
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+
+/* ****************** brand  section ************** */
+.brands{
+    margin: 100px auto;
+}
+
+.brands .col-5{
+    width: 160px;
+}
+.brands .col-5 img{
+    width: 100%;
+    cursor: pointer;
+}   
+
+/* ****************** footer  section ************** */
+
+.footer{
+    flex-basis: 30%;
+    background: black;
+    color: #8a8a8a;
+    padding: 60px 0 20px;
+    
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+
+.footer h3{
+    color: white;
+}
+
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+.copyright{
+    text-align: center;
+    color: white;
+    line-height: 40px;
+}
+
+
+
+.menu-icon{
+    width: 28px;
+    margin-left: 25px;
+    /* display: none; */
+
+}
+
+/* ************* media query **************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header a{
+    font-size: 18px;
+    color: whitesmoke;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background: #dd2476;
+    overflow: hidden;
+    background: linear-gradient(#dd2476,#ff512f);
+}
+
+
+header li a:hover{
+    color: black;
+}
+header .nav-item{
+    padding: 0.9rem;
+}
+
+header .navbar-brand{
+    padding-left: 8rem;
+}
+header .navbar-brand:hover{
+    color: black;
+    
+}
+
+.row .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.row .main h6{
+    letter-spacing: 4px;
+    color: white;
+    padding: 1vmin;
+    
+}
+.row .main h1{
+    font-weight: bold;
+    color: white;
+    
+}
+.row .main p{
+    
+    color: white;
+    
+}
+.row .main .btn{
+    font-weight: bold;
+    
+    border-radius: 30px;
+    
+}
+
+.photo img{
+    width: 141%;
+    height: 100%;
+    /* background: linear-gradient(#dd2476,#ff512f); */
+    /* filter: invert(100%); */
+}
+
+/* ************* section ***************** */
+
+.section1{
+    padding: 20px;
+}
+
+.section1 .row .col-md-6 .pray img{
+    
+    width: 93%;
+    height: auto;
+    object-fit: cover;
+
+    height: 457px;
+
+    
+}
+/* .section1 .row .col-md-6:last-child{
+    position: relative;
+    
+} */
+.section1 .row .col-md-6 .panel{
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 14px 45px;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    
+}
+.section1 .row .col-md-6 .panel h1{
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 2em;
+}
+.section1 .row .col-md-6 .panel p{
+    color: rgb(87, 84, 84);
+}
+
+/* ********* cover ************* */
+
+.cover{
+    width: 100%;
+    height: 55vmin;
+    background: url(/images/Project-2/bg1.jpg);
+    background-position: -24rem -19rem;
+    background-size: 150%;
+}
+
+.cover .content{
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.cover .numbers .container{
+    width: 17rem;
+    height: 12rem;
+    margin-top: -50px;
+    padding-bottom: 20px;
+    background-color: white;
+    padding-top: 20px;
+    box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+}
+
+.purchase{
+    padding-top:266px ;
+}
+.purchase h1{
+    padding-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.purchase p{
+    padding-bottom: 10px;
+}
+
+.purchase .cards{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+   
+   
+}
+
+.card .btn{
+    margin-bottom: 26px;
+}
+
+.section3{
+    margin-top: 15vmin;
+    height: 50vmin;
+    background: #dd2476; 
+    text-align: center;
+}
+
+.text{
+    color: white;
+    
+}
+.section3 .buttons{
+    padding: 10px;
+    
+}
+
+footer{
+    background: black;
+    color: white;
+}

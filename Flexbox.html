@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            height: 544px;
+            width: 100%;
+            /* ************************* */
+            display: flex;
+
+            /* flex properties for flex container */
+            /* flex-direction: row;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse; */
+
+            /* flex-wrap: wrap;
+            flex-wrap: wrap-reverse; */
+
+            /* *******shorcut flex proprties and flex wrap */
+            /* flex-flow: column wrap; */
+
+
+            /* ########centre madhe kase ghayche ############# */
+            /* justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */
+            /* justify-content: center; */
+
+            /* align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch; */
+        }
+
+        .item {
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+            background-color: tomato;
+            /* ************************************* */
+            width: 150px;
+            height: 150px;
+        }
+
+        #item1{
+            /* flex properties for itm , maximum order */
+            /* order: 2; */
+
+            /* ############## flex growth ############ */
+            /* flex-grow: 2; */
+            
+            /* ########## default size change karynasati ################ */
+            /* flex-basis: 200px; */
+
+            /* flex-shrink: 2; */
+
+
+
+        }
+        #item2{
+            /* order: 3;
+            flex-grow: 1; */
+            flex-basis: 150px;
+
+        }
+        #item3{
+            /* order: 5; */
+            /* #### flex shourtcut ,Grow ,shrink,Basics */
+            
+            /* align-self:flex-end;
+            align-self: center;
+            align-self: flex-start; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box</div>
+        <div class="item" id="item3">third box</div>
+        <!-- <div class="item" id="item4">fourth box</div>
+        <div class="item" id="item5">fifth box</div>
+        <div class="item" id="item6">sixth box</div> -->
+    </div>
+</body>
+
+</html>

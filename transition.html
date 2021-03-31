@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transition</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+        #box{
+            display: flex;
+            
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: red;
+            justify-content: center;
+            align-items: center;
+
+            /* transition-property: background-color;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+            transition-delay: 2s; */
+
+            /* ####   shourcut method   #### */
+            transition : all  1s ease-out 0s;
+
+
+        
+        }
+        #box:hover{
+            background-color: white;
+            color: blue;
+            height: 400px;
+            width: 400px;
+            border-radius: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>this is transition tutorial</h3>
+    <div class="container">
+        
+        <div id="box">
+            This is my box
+        </div>
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+</html>

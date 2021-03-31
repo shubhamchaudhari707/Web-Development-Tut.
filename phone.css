@@ -1,0 +1,98 @@
+#navbar{
+    flex-direction: column;
+
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+}
+
+#home{
+    flex-direction: column;
+    height: 370px;
+    padding: 3px 30px;
+}   
+#home::before{
+    
+    height: 480px;
+
+
+}
+#home p{
+    font-size: 13px;
+    flex-direction: column;
+}
+
+#services{
+    flex-direction: column;
+
+}
+
+#services.box img{
+    width: 120px;
+    height: auto;
+
+}
+#services .box{
+    
+    margin: 2px 0px;
+    padding: 14px;
+    
+    
+
+}
+#clints{
+    position: relative;
+    flex-wrap: wrap;
+    
+}
+#clints img{
+width: 36px;
+padding: 6px;
+height: auto;
+
+}
+#contact {
+
+}
+
+/* utility */
+.h-primery{
+    font-size: 30px;
+
+}
+.btn{
+    font-size: 15px;
+    padding: 4px 8px;
+}
+.contact-box form{
+    width: 80%;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

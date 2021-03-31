@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    text-transform: capitalize;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/Project3/bg.jpg);
+    background-size: cover;
+}
+.banner .content{
+    max-width:901px;
+    text-align: center;
+
+}
+.banner .content h2{
+    font-size: 5em;
+    color: white
+}
+.banner .content p{
+    font-size: 1em;
+    color: white
+}
+
+.btn{
+    font-size: 2em;
+    color: white;
+    display: inline-block;
+    padding: 11px 30px;
+    background: #ff0157;
+    margin-top: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+/* ######## NAVIGATION BAR ########## */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: white;
+    padding: 10px 30px;
+    /* box-shadow: 0px 5px 20px rgba(0,0,0,0.5,); */
+}
+header .logo{
+    color: white;
+    font-size: 2em;
+    font-weight: 900;
+    text-decoration: none;
+}
+header.sticky .logo{
+    color: black;
+}
+header .logo span{
+    color:#ff0157 
+}
+
+header .navigation{
+    display: flex;    
+
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+    padding: 10px 10px;
+
+}
+header .navigation li a{
+    text-decoration: none;    
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+}
+header.sticky .navigation li a{
+    /* color: #ff0157; */
+    color: rgb(70, 68, 68);
+}
+header.sticky .navigation li a:hover{
+    color: #ff0157;
+    
+}
+header .navigation a:hover{
+    color: #ff0157;
+
+}
+
+/* ############### about section ################### */
+
+.about{
+    padding: 100px;
+
+}
+.row{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+}
+.row .col150{
+    position: relative;
+    width:48%;
+}
+/* .row .col150 .imgbx{
+    width: 100%;
+    position: relative;
+    height: 100%;
+} */
+.row .col150 .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.titleText{
+    font-size: 3rem;
+    font-weight: 300;
+    
+}
+.titleText span{
+    color: #ff0157;
+    font-size: 5rem;
+}
+
+/* ########## menu section ############### */
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    align-items: center;
+    padding: 40px;
+}
+.menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 2px solid white;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+.menu .content .box .imgbx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .content .box .imgbx img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.menu .content .box .text{
+    padding: 15px 0px;
+    text-align: center;
+}
+
+/* ################# Expert section ################# */
+.expert .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+    padding: 40px;
+}
+.expert .content .box{
+    width: 250px;
+    margin: 15px;
+    border: 2px solid white;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+.expert .content .box .imgbx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.expert .content .box .imgbx img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.expert .content .box .text{
+    padding: 15px 0px;
+    text-align: center;
+}
+
+/* ######### testimonials section ################ */
+
+.testimonials{
+    background: url(/images/Project3/bg2.jpg);
+    background-size: cover;
+}
+.white{
+    color: white;
+}
+.testimonials .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+
+}
+.testimonials .content .box{
+    background: white;
+    margin: 20px;
+    width: 340px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* .testimonials .content .box .imgbx{
+   display: flex;
+   width: 100px;
+   height: 100px;
+} */
+.testimonials .content .box .imgbx img{
+    height: 100px;
+    margin-bottom: 50px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+.testimonials .content .text{
+    text-align: center;
+    font-style: italic;
+    padding: 10px 15px;
+}
+.testimonials .content .text h3{
+    text-align: center;
+    margin-top: 26px;
+    font-size: 28px;
+    font-weight: 600;
+    color:#ff0157 ;
+}
+
+/* ############### contact section ############# */
+.contact{
+    background: url(/images/Project3/bg3.jpg);
+    background-size: cover;
+    
+}
+.contact .contactform{
+    margin-top: 50px;
+    padding: 76px 52px;
+    box-shadow: 0 14px 60px rgba(0,0,0,0.1);
+    width: 500px;
+    background: #fff;
+}
+    
+}
+.contactform h3{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+
+}
+.contact .contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.contact .contactform .inputbox input{
+    width: 100%;
+    border: 2px solid #111;
+    font-size: 16px;
+    /* text-align: center; */
+    padding: 10px 0px;
+}
+.contact .contactform .inputbox textarea{
+    width: 100%;
+    border: 2px solid #111;
+    font-size: 16px;
+    text-align: center;
+    
+}
+.contact .contactform .inputbox input[type="submit"]{
+    font-size: 1em;
+    color: white;
+    background-color: #ff0157;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 26%;
+    
+    
+}
+
+
+.copyright{
+    text-align: center;
+    font-size: 150%;
+    padding: 10PX 40PX;
+    background-color: black;
+    color: white;
+
+}
+
+/* ########### media Quries ############## */
+
+@media (max-width:1000px){
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        
+    }
+    header .navigation li{
+        margin-left: 0;
+    }
+    header .navigation li a{
+        color: #111;
+        font-size: 1.6rem;
+    }
+
+    .menutoggle{
+        background: url(/images/Project3/menu.png);
+        background-size: 30px;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+     
+    .menutoggle.active{
+        background: url(/images/Project3/close.png);
+        background-size: 25px;
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    header.sticky .menutoggle{
+        filter: invert(1);
+    }
+
+    .banner .content h2 {
+        font-size: 3rem;
+        color: white;
+    
+    }
+    .btn {
+        font-size: 1.5rem;
+        padding: 3px 9px;
+    }
+    .row {
+        
+        flex-direction: column
+    }
+    .row .col150 {
+        width: 100%;
+    }
+    .row .col150 .imgbx  {
+        width: 100%;
+        margin-top: 47px;
+        height: 300px;
+    }
+    }
+    .row .col150 .imgbx img {
+        
+        margin-top: 40px;
+    }
+    p{
+        text-align: center;
+    }
+    .titleText {
+        font-size: 2rem;
+    }
+    .contact .contactform .inputbox textarea {
+        width: 75%;
+    }
+    .contact .contactform .inputbox input {
+        width: 75%;
+    }
+    .contact .contactform {
+        margin-top: 29px;
+        padding: 77px 42px; 
+    }
+    .contact .contactform .inputbox {
+        position: relative;
+        width: 117%;
+    }
+    .contact .contactform {
+        
+        box-shadow: 0 14px 60px rgba(0,0,0,0.1);
+        width: 295px;
+    }
+    
+
+    .testimonials .content .box {
+        background: white;
+        
+        width: 255px;
+        padding: 44px;
+    }
+    
+
+    .testimonials .content .text h3 {
+        
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    
+
+    .testimonials .content .box .imgbx img {
+    
+        margin-bottom: 1px;
+    }
+
+
+
+
+
+
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
